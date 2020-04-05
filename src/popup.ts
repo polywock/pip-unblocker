@@ -4,7 +4,7 @@ import { getDefaultConfig, standardIcons, grayscaleIcons } from "./defaults"
 
 let activateDiv = document.getElementById("activate")
 document.getElementById("github").addEventListener("click", e => {
-  window.open("https://github.com/polywock/globalSpeed", '_blank');
+  window.open("https://github.com/polywock/pipUnblocker", '_blank');
 })
 
 let config: Config; 

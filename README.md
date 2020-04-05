@@ -1,10 +1,8 @@
-# PiP Unblocker: Picture-in-Picture for every site
-Unblock Picture-In-Picture functionality for all sites. 
+# PiP Unblocker
+Unblock PiP functionality by clearing associated Feature-Policy headers. Compatible with YoutubeTV.
 
-To use, install the [Chrome](), [Firefox](), or [Edge]() extension. 
+To use, install the [Chrome]() or [Edge]() extension. 
 
-## Features
-- Compatible with YoutubeTV
 
 ## Build 
 1. `npm install` to install required dependencies. 
@@ -12,7 +10,3 @@ To use, install the [Chrome](), [Firefox](), or [Edge]() extension.
 1. Load the unpacked folder
    1. Chrome: open extensions page, enable dev mode, load unpacked. 
    1. Edge: open extensions page, load unpacked.
-
-## Release Notes
-
-### V0.1
