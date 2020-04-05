@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "scripts": {
+    "build:dev": "rm -rf build && webpack --config webpack.dev.js && cp -r static/. build/unpacked && find build -name '.DS_Store' -type f -delete",
+    "build:prod": "rm -rf build && webpack --config webpack.prod.js && cp -r static/. build/unpacked && find build -name '.DS_Store' -type f -delete && cd build/unpacked && zip -r ../packed.zip ."
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "typescript": "^3.7.5",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@types/chrome": "0.0.93",
+    "regenerator-runtime": "^0.13.3"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "PiP Unblocker",
+  "version": "0.1",
+  "description": "Unblock Picture-in-Picture functionality for all sites.",
+  "manifest_version": 2,
+  "permissions": ["webRequest", "webRequestBlocking", "storage", "https://*/*", "http://*/*", "file://*/*"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": { 
+    "128": "icon128.png" 
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_ui": {
+    "open_in_tab": true,
+    "page": "options.html"
+  }
+}

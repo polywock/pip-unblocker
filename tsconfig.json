@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["@types/chrome"],
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "commonjs", 
+    "target": "es2018",
+    "allowJs": true,
+    "sourceMap": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["./node_modules/**/*"]
+}
