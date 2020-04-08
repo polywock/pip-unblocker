@@ -1,7 +1,7 @@
 # PiP Unblocker
 Unblock PiP functionality by clearing associated Feature-Policy headers. Compatible with YoutubeTV.
 
-To use, install the [Chrome]() or [Edge]() extension. 
+To use, install the [Chrome](https://chrome.google.com/webstore/detail/pip-unblocker/djjjomidddlggllpialpgkpnkdaeggfa) or Edge (publishing) extension. 
 
 
 ## Build 
