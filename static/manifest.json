@@ -1,6 +1,6 @@
 {
   "name": "PiP Unblocker",
-  "version": "0.1",
+  "version": "0.2",
   "description": "Unblock Picture-in-Picture functionality.",
   "manifest_version": 2,
   "permissions": ["webRequest", "webRequestBlocking", "storage", "https://*/*", "http://*/*"],
