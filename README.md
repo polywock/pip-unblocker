@@ -5,8 +5,5 @@ Unblock PiP functionality by clearing associated Feature-Policy headers. Compati
 
 
 ## Build 
-1. `npm install` to install required dependencies. 
-1. `npm run build:dev` build unpacked version. 
-1. Load the unpacked folder
-   1. Chrome: open extensions page, enable dev mode, load unpacked. 
-   1. Edge: open extensions page, load unpacked.
+1. Chrome: open extensions page, enable dev mode, load unpacked. 
+1. Edge: open extensions page, load unpacked.

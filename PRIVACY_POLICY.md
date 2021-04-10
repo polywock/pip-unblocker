@@ -1,3 +1,2 @@
-
-# Privacy Policy 
-1. Product does not collect any personal information. 
+# Privacy Policy
+1. Product does not collect any personal information.

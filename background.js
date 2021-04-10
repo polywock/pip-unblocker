@@ -1,8 +1,5 @@
-import { Config } from "./types"
-import { getDefaultConfig } from "./defaults"
-
-export class WebRequestManager {
-  config: Config
+class WebRequestManager {
+  config = null
   attached = false 
   constructor() {
     chrome.storage.local.get(items => {
@@ -17,9 +14,9 @@ export class WebRequestManager {
   release = () => {
     chrome.webRequest.onHeadersReceived.removeListener(this.handleHeadersReceived)
   }
-  handleHeadersReceived = (details: chrome.webRequest.WebResponseHeadersDetails) => {
-    let newHeaders: chrome.webRequest.HttpHeader[] = []
-    let featurePolicies: {feature: string, allowList: string[]}[] = []
+  handleHeadersReceived = (details) => {
+    let newHeaders = []
+    let featurePolicies = []
 
     details.responseHeaders.forEach(header => {
       if (header.name.trim().toLowerCase() !== "feature-policy") {
@@ -41,7 +38,7 @@ export class WebRequestManager {
 
     return {
       responseHeaders: newHeaders
-    } as chrome.webRequest.BlockingResponse
+    }
   }
   attach = () => {
     if (this.attached) return 
@@ -56,7 +53,7 @@ export class WebRequestManager {
     chrome.webRequest.onHeadersReceived.removeListener(this.handleHeadersReceived)
     this.attached = false 
   }
-  handleConfigChange = (config: Config) => {
+  handleConfigChange = (config) => {
     this.config = config 
     if (this.config.enabled) {
       this.attach()
@@ -66,7 +63,7 @@ export class WebRequestManager {
   }
 }
 
-function fpParser(value: string) {
+function fpParser(value) {
   value = value.trim() 
   if (value.length === 0) return []
   return value.split(";").map(v => {
@@ -74,3 +71,13 @@ function fpParser(value: string) {
     return {feature, allowList}
   })
 }
+
+
+function getDefaultConfig() {
+  return {
+    version: 1,
+    enabled: true
+  }
+}
+
+let mgr = new WebRequestManager()
