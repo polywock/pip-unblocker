@@ -2,17 +2,14 @@ class WebRequestManager {
   config = null
   attached = false 
   constructor() {
-    chrome.storage.local.get(items => {
-      this.handleConfigChange(items["config"] || getDefaultConfig())
+    chrome.storage.local.get(["config"], ({config}) => {
+      this.handleConfigChange(config || getDefaultConfig())
     })
     chrome.storage.onChanged.addListener(changes => {
-      const config = changes["config"].newValue
+      const config = changes.config?.newValue
       if (!config) return 
       this.handleConfigChange(config)
     })
-  }
-  release = () => {
-    chrome.webRequest.onHeadersReceived.removeListener(this.handleHeadersReceived)
   }
   handleHeadersReceived = (details) => {
     let newHeaders = []
