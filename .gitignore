@@ -1,2 +1,4 @@
-node_modules/
-build/
+*.zip
+node_modules
+package*
+.DS_Store
