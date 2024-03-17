@@ -1,14 +1,18 @@
 
 # PiP Unblocker 
 
-Clear Permissions-Policy headers to unblock features like Picture-in-Picture.
+Clears 
+    - Permissions-Policy headers
+    - Feature-Policy headers 
+    - Attributes that block PiP. 
 
-Compatible with YoutubeTV.
+Compatible with YoutubeTV, DisneyPlus, and more.
 
 ## To use, install the [Chrome](https://chrome.google.com/webstore/detail/pip-unblocker/djjjomidddlggllpialpgkpnkdaeggfa) or [Edge](https://microsoftedge.microsoft.com/addons/detail/pgfngmhkdmmciaegfklbialafkpgmkhh) extension. 
 
 ### Changelog 
 1. Updated to Manifest V3
+2. Now you can click the extension icon to clear disablePictureInPicture attributes (useful for Disney Plus)
 
 ### Loading from repository 
 1. Chrome: open extensions page, enable dev mode, load unpacked. 
