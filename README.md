@@ -6,7 +6,7 @@ Clears
     - Feature-Policy headers 
     - Attributes that block PiP. 
 
-Compatible with YoutubeTV, DisneyPlus, and more.
+Compatible with YoutubeTV, DisneyPlus, Crunchyroll, and more.
 
 ## To use, install the [Chrome](https://chrome.google.com/webstore/detail/pip-unblocker/djjjomidddlggllpialpgkpnkdaeggfa) or [Edge](https://microsoftedge.microsoft.com/addons/detail/pgfngmhkdmmciaegfklbialafkpgmkhh) extension. 
 
