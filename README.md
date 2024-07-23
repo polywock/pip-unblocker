@@ -12,7 +12,7 @@ Compatible with YoutubeTV, DisneyPlus, Crunchyroll, and more.
 
 ### Changelog 
 1. Updated to Manifest V3
-2. Now you can click the extension icon to clear disablePictureInPicture attributes (useful for Disney Plus)
+2. Now you can click the extension icon to clear disablePictureInPicture attributes (useful for Disney Plus, Crunchyroll)
 
 ### Loading from repository 
 1. Chrome: open extensions page, enable dev mode, load unpacked. 
